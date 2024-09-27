@@ -8,3 +8,27 @@ body {
     font-family: "Poppins", sans-serif;
   }
   
+
+  .custom_shadow {
+    box-shadow: 4px 0px 20px 0px #0000000D;
+
+  }
+
+
+  /* Custom scrollbar styles */
+.sidebar-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.sidebar-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the scrollbar track */
+}
+
+.sidebar-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #C4B0A9; /* Thumb color */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.sidebar-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #85716B; /* Change color on hover */
+}

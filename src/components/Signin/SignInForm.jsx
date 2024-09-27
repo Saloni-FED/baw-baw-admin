@@ -1,8 +1,15 @@
+"use client"
 import React from "react";
 import logo from "../../public/Group.png";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const SignInForm = () => {
+  const router = useRouter()
+  const handleSubmit = (e)=>{
+    e.preventDefault()
+    router.push("/dashboard")
+  }
   return (
     <div className="bg-white p-8 rounded-3xl shadow-lg w-3/4 mx-auto max-lg:w-full lg:pt-10 lg:px-20 lg:pb-32">
       {" "}
@@ -60,7 +67,8 @@ const SignInForm = () => {
         <div className="w-full flex justify-center lg:mt-10">
           <button
             type="submit"
-            className="w-full lg:w-fit lg:rounded-full  bg-baw-red text-white font-bold py-3 px-7 rounded-md flex justify-center items-center hover:bg-red-600"
+            className="w-full lg:w-fit lg:rounded-full  bg-baw-red text-white font-bold py-3 px-7 rounded-md flex justify-center items-center hover:bg-baw-yellow"
+            onClick={handleSubmit}
           >
             <span>SIGN IN</span>
             <span className="ml-2">➔</span>

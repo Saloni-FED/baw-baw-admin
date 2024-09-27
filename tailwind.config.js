@@ -17,7 +17,9 @@ module.exports = {
         "baw-red": "#F47458",
         "baw-baw-g4": "#C4B0A9",
         "baw-baw-g6": "#F3EAE7",
+        "baw-baw-g5" : "#D4C6C0",
         "baw-light-gray": "#00000080",
+        "baw-text":"#85716B"
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
