@@ -4,7 +4,7 @@ import Card from "../Card";
 import shake from "../../public/Dashboard.png";
 import up from "../../public/up.png";
 import service from "../../public/services.png";
-import user from "../../public/users.png";
+import user from "/users.png";
 import downt from "../../public/downt.png";
 import dollar from "../../public/dollar-sign.png";
 import GradientBarChart from "../GradientBarChart";
