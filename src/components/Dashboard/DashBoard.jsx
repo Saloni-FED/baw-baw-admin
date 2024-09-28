@@ -1,19 +1,20 @@
-"use client"
+"use client";
 import React from "react";
-import Card from "../Card";
+import dynamic from "next/dynamic";
 import shake from "../../public/Dashboard.png";
 import up from "../../public/up.png";
 import service from "../../public/services.png";
 import user from "../../public/user.png";
 import downt from "../../public/downt.png";
 import dollar from "../../public/dollar-sign.png";
-import GradientBarChart from "../GradientBarChart";
-import Map from "../Map";
-import SpiderChart from "../SpiderChart";
+import Card from "../Card"
 
-import LineGraph from "../LineGraph";
-import BarGraph from "../BarGraph"
-import PieCharts from "../PieCharts"
+const GradientBarChart = dynamic(() => import("../GradientBarChart"), { ssr: false });
+const Map = dynamic(() => import("../Map"), { ssr: false });
+const SpiderChart = dynamic(() => import("../SpiderChart"), { ssr: false });
+const LineGraph = dynamic(() => import("../LineGraph"), { ssr: false });
+const BarGraph = dynamic(() => import("../BarGraph"), { ssr: false });
+const PieCharts = dynamic(() => import("../PieCharts"), { ssr: false });
 
 const DashBoard = () => {
   const data = [
@@ -92,7 +93,6 @@ const DashBoard = () => {
           darkColor="#E57373"
           lightColor="#DFA5A5"
         />
-
         <GradientBarChart
           head="Total Users"
           count="7000"
@@ -101,13 +101,12 @@ const DashBoard = () => {
           lightColor="#EFE16C"
         />
         <SpiderChart />
-
         <Map />
         <LineGraph />
       </div>
-      <div className=" w-full flex  lg:justify-between justify-around items-center gap-4 lg:gap-5 mt-5 max-lg:flex-col">
-         <BarGraph/>
-         <PieCharts/>
+      <div className=" w-full flex lg:justify-between justify-around items-center gap-4 lg:gap-5 mt-5 max-lg:flex-col">
+        <BarGraph />
+        <PieCharts />
       </div>
     </div>
   );

@@ -1,13 +1,13 @@
-"use client"
-import React from 'react'
-import DashBoard from '@/components/Dashboard/DashBoard'
+"use client";  // Ensures this page is rendered only on the client
 
-const page = () => {
+import DashBoard from '../../../components/Dashboard/DashBoard';
+
+const Page = () => {
   return (
     <div>
-      <DashBoard/>
+      <DashBoard />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default Page;
