@@ -13,7 +13,7 @@ import SpiderChart from "../SpiderChart";
 
 import LineGraph from "../LineGraph";
 import BarGraph from "../BarGraph"
-import PieCharts from "../PieCharts"
+// import PieCharts from "../PieCharts"
 
 const DashBoard = () => {
   const data = [
@@ -107,7 +107,6 @@ const DashBoard = () => {
       </div>
       <div className=" w-full flex  lg:justify-between justify-around items-center gap-4 lg:gap-5 mt-5 max-lg:flex-col">
          <BarGraph/>
-         {/* <PieCharts/> */}
       </div>
     </div>
   );
