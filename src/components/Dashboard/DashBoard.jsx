@@ -97,8 +97,8 @@ const DashBoard = () => {
           head="Total Users"
           count="7000"
           Icon={false}
-          darkColor="#FFEB3B" // Starting color of the gradient
-          lightColor="#EFE16C" // Ending color of the gradient
+          darkColor="#FFEB3B"
+          lightColor="#EFE16C"
         />
         <SpiderChart />
 
