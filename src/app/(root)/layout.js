@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
           </div>
 
           {/* Children content should take remaining width */}
-          <div className="flex-grow bg-oohpoint-grey-100 p-10">{children}</div>
+          <div className="flex-grow bg-oohpoint-grey-100 p-5">{children}</div>
         </div>
       </div>
     </MyProvider>

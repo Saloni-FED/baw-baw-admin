@@ -8,7 +8,7 @@ const Signin = () => {
   return (
     <div className="flex h-screen max-lg:flex-col">
       {/* Use h-screen to make the parent full height */}
-      <div className="basis-1/2 flex-1 border-2 bg-baw-yellow relative flex flex-col items-center h-full">
+      <div className="basis-1/2 flex-1  bg-baw-yellow relative flex flex-col items-center h-full">
         {/* Set flex-col to arrange items vertically */}
         {/* Container for both images */}
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 mt-4">
@@ -32,7 +32,7 @@ const Signin = () => {
           />
         </div>
       </div>
-      <div className="md:basis-1/2 flex-1 border-2 flex justify-center items-center h-full max-lg:w-full">
+      <div className="md:basis-1/2 flex-1  flex justify-center items-center h-full max-lg:w-full">
         <SignInForm/>
       </div>
     </div>

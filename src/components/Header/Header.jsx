@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <div className="md:min-h-[4rem] min-h-[1rem] w-full flex md:flex-row justify-between items-center py-2 md:py-4 md:px-12 px-2 flex-col-reverse gap-4 bg-white border-b-2 border-baw-baw-g5">
+    <div className="md:min-h-[4rem] min-h-[5rem] w-full flex md:flex-row justify-between items-center py-2 md:py-4 md:px-12 px-2 flex-col-reverse gap-4 bg-white border-b-2 border-baw-baw-g5">
       
       {/* Logo and Menu (FaBars) - Responsive */}
       <div className="flex justify-between items-center w-full md:w-auto">
